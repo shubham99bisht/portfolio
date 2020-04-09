@@ -8,6 +8,14 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- JS files for  Bootstrap
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+
 
       <!-- Vendor CSS Files -->
       <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,28 +29,29 @@
       <link href="assets/css/style.css" rel="stylesheet">
       <link href="assets/css/card_style.css" rel="stylesheet">
   </head>
-  <body>
+  <body  style="background:#ecf5ff">
 
     <!-- ======= Navbar ======= -->
     <header id="header" class="fixed-top">
       <div class="container">
 
         <div class="logo float-left">
-          <a><img src="assets/img/logo.png" style="height:40px;"></a>
+          <a href="https://shubham99bisht.github.io/" target="_blank"><img src="assets/img/logo.png" style="height:40px;"></a>
         </div>
 
         <nav class="main-nav float-right d-none d-lg-block">
           <ul>
             <li class="active"><a href="https://shubham99bisht.github.io/portfolio/">Home</a></li>
-            <li><a href="#">All Projects</a></li>
+            <li><a href="https://shubham99bisht.github.io/portfolio/projects">All Projects</a></li>
             <li><a href="https://shubham99bisht.github.io/portfolio/upcoming">Upcoming Projects</a></li>
             <li><a href="https://shubham99bisht.github.io/portfolio/tech_stack">Tech Stack</a></li>
             <li class="drop-down"><a href="">Search Project</a>
               <ul>
-                <li><a href="#about">MNIST</a></li>
-                <li><a href="#clients">Yolo</a></li>
-                <li><a href="#team">Document Reader</a></li>
-                <li><a href="#footer">SIFT</a></li>
+                <li><a href="#">MNIST</a></li>
+                <li><a href="#">Yolo</a></li>
+                <li><a href="#">Document Reader</a></li>
+                <li><a href="#">SIFT</a></li>
+                <li><a href="#">Face Recognition</a></li>
               </ul>
             </li>
           </ul>
@@ -50,20 +59,50 @@
 
       </div>
     </header><!-- #header -->
+
     <br><br><br>
+
+
+    <!-- Filter Bar -->
+    <div  style="padding-top:10px;width:100%;">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand">Filter Results</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filter By Tags
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Machine Learning</a>
+              <a class="dropdown-item" href="#">Deep Learning</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">UI/UX projects</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    </div>
+    <!-- Filter Bar Ends-->
+
+    <br><br>
+
 
     <main id="main">
 
-      <!-- ======= About Section ======= -->
-      <section id="about">
-        <div class="container">
-
-          <header class="section-header">
-            <h3 style="margin-top:-20px;">Top Projects</h3>
-            <p>Batman would be <b>Jealous</b></p>
-          </header>
-
-          <div class="container project-cards">
+      <!-- ======= Projects Section ======= -->
+      <section id="about"  style="background:#ecf5ff; padding: 0px;">
+        <div class="container" >
+          <div class="container project-cards"  style="background:#ecf5ff">
             <div class="row">
 
               <div class="col-md-4">
@@ -97,11 +136,60 @@
               </div>
 
             </div>
+            <br><br>
+            <div class="row">
+
+              <div class="col-md-6">
+                <div class="card card-without-img">
+                  <h3>Speaker Recognition</h3>
+                  <button class="btn btn-warning">PyAudioAnalysis</button><br>
+                  <p>Worked at CereLabs for exploring potential in voice search and tagging.</p>
+                  <button class="btn btn-outline-success">More Details <i class="fa fa-external-link"></i></button><br>
+                  <button class="btn btn-outline-danger">Research Paper  <i class="fa fa-external-link"></i></button>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card card-without-img">
+                  <h3>Key Information Extraction from Invoices</h3>
+                  <button class="btn btn-warning">Bi-LSTM, Rule-Based </button><br>
+                  <p>Worked on “Helmet Detection for Two Wheeler riders to ensure road safety” using the power of Deep Learning and Computer Vision.</p>
+                  <button class="btn btn-outline-success">More Details <i class="fa fa-external-link"></i></button><br>
+                  <button class="btn btn-outline-danger">Research Paper <i class="fa fa-external-link"></i></button>
+                </div>
+              </div>
+
+            </div>
+            <br><br>
+            <div class="row">
+
+              <div class="col-md-6">
+                <div class="card" style="background-image: url('./assets/img/repo/space.png');">
+                  <h3>Face Recognition</h3>
+                  <button class="btn btn-warning">PyAudioAnalysis</button><br>
+                  <p>Worked on “Helmet Detection for Two Wheeler riders to ensure road safety” using the power of Deep Learning and Computer Vision.</p>
+                  <button class="btn btn-outline-success">More Details <i class="fa fa-external-link"></i></button><br>
+                  <button class="btn btn-outline-danger">Research Paper  <i class="fa fa-external-link"></i></button>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card card-without-img">
+                  <h3>Handwritten Document Analysis</h3>
+                  <p>Worked on “Helmet Detection for Two Wheeler riders to ensure road safety” using the power of Deep Learning and Computer Vision.</p>
+                  <button class="btn btn-outline-success">More Details <i class="fa fa-external-link"></i></button><br>
+                  <button class="btn btn-outline-danger">Research Paper <i class="fa fa-external-link"></i></button><br>
+                  <div class="card-footer" style="border-radius: 10px;border-top: none; background-color:#e9ecef;">
+                    <span class="w3-tag w3-blue w3-round">New!</span>
+                    <span class="w3-tag w3-blue w3-round">Machine Learning</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
-
-
         </div>
-      </section><!-- End About Section -->
+      </section><!-- End Projects Section -->
 
     </main><!-- End #main -->
 
@@ -114,5 +202,23 @@
         </div>
       </div>
     </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/mobile-nav/mobile-nav.js"></script>
+    <script src="assets/vendor/wow/wow.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
   </body>
 </html>
